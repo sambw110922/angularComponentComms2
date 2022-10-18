@@ -1,0 +1,12 @@
+
+<div>
+  <h2>From Parent to Sub</h2>
+  <button (click)="parentToSub()">CLICK TO SEND MESSAGE TO SUB</button>
+  <app-parent-to-sub [messageFromParent]="messageToSub" ></app-parent-to-sub>
+</div>
+
+<div>
+  <h2>From Sub to Parent</h2>
+  <app-sub-to-parent (messageToParent)="getMessageFromSub($event)" ></app-sub-to-parent>
+  <p>{{ messageFromSub }}</p>
+</div>

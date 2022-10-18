@@ -1,0 +1,11 @@
+
+html, body {
+    background-color: yellow;
+    padding: 2%;
+    font-size: 18px;
+}
+
+button {
+    margin: 2%;
+    padding: 2%;
+}
